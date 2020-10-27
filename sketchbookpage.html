@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Jovanio Sketchbook Page</title>
+<style>
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(0, 2vw);
+    grid-gap: 15px;
+}
+body {
+    background-color: #201E1E;
+    margin: 0 10%;
+    height: auto;
+    font-family: Baskerville, 'Palatino Linotype', Palatino, 'Century Schoolbook L', 'Times New Roman', 'serif';
+}
+h3 {
+    text-align: center;
+    font-size: 26px;
+    font-family: Baskerville, 'Palatino Linotype', Palatino, 'Century Schoolbook L', 'Times New Roman', 'serif';
+    font-weight: normal;
+    color: #B26363;
+    padding-bottom: 30px;
+    border-bottom: 3px double #8A4445;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#header {
+    color: #C48889;
+    padding: 10px;
+    font-weight: normal;
+    text-decoration: none;
+    border-radius: 20px;
+}
+#header:hover {
+    color: paleturquoise;
+}
+#header2 {
+    color: #C48889;
+    padding: 10px;
+    font-weight: normal;
+    text-decoration: none;
+    border-radius: 20px;
+}
+#header2:hover {
+    color: paleturquoise;
+}
+#header3 {
+    color: #C48889;
+    padding: 10px;
+    font-weight: normal;
+    text-decoration: none;
+    border-radius: 20px;
+}
+#header3:hover {
+    color: paleturquoise;
+}
+.wi {
+    max-width: 100%;
+    height: auto;
+}
+.ws {
+    max-width: 100%;
+    height: auto;
+}
+.container {
+    position: relative;
+    width: 100%;
+}
+.wi {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.ws {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: relative;
+    bottom: 50%;
+    text-align: center;
+}
+.container:hover .wi {
+    opacity: 0.3;
+}
+.container:hover .ws {
+    opacity: 0.3;
+}
+.container:hover .middle {
+    opacity: 1;
+}
+.text {
+    color: white;
+    font-size: 35px;
+    padding: 16px 32px;
+}
+footer {
+    text-align: center;
+    font-family: Baskerville, 'Palatino Linotype', Palatino, 'Century Schoolbook L', 'Times New Roman', 'serif';
+    font-weight: normal;
+    color: #BF7F7F;
+    padding-bottom: 32px;
+    padding-top: 30px;
+    margin-top: 260px;
+    margin-bottom: 30px;
+    line-height: 30px;
+}
+#email {
+    font-family: Baskerville, 'Palatino Linotype', Palatino, 'Century Schoolbook L', 'Times New Roman', 'serif';
+    font-weight: normal;
+    color: #BF7F7F;
+    text-decoration: none;
+}
+#email:hover {
+    color: paleturquoise;
+}
+#websitelink {
+    font-family: Baskerville, 'Palatino Linotype', Palatino, 'Century Schoolbook L', 'Times New Roman', 'serif';
+    font-weight: normal;
+    color: #BF7F7F;
+    text-decoration: none;
+    padding-right: 30px;
+}
+#websitelink:hover {
+    color: paleturquoise;
+}
+</style>
+</head>
+<section>
+  <h3><a id="header" href="index.html">Home</a><a id="header2" href="sketchbookpage.html">Sketchbook</a><a id="header3" href="projectspage.html">Projects</a></h3>
+</section>
+
+<body>
+<main>
+  
+  <div class="gallery">
+    <div class="container"> <a href="weddingInvitation2.html" target="_blank" > <img src="weddicon9.svg" class="wi" alt="weddinginvitation"></a>
+      <div class="middle">
+        <div class="text">Wedding Invitation</div>
+      </div>
+    </div>
+    <div class="container"> <a href="sktechbookentry2/index.html" target="_blank"> <img src="sktechbookentry2/ymoccoicon3.svg" class="ws" alt="website"></a>
+      <div class="middle">
+        <div class="text">YMOCCO (Website Design)</div>
+      </div>
+    </div>
+  </div>
+	
+</main>
+	
+<footer>
+  <section> <a id="websitelink" href="https://www.jovanioccomy.com"> Author: Jovani Occomy </a> <a id="email" href="mailto:jo0030@uah.edu" target="_blank">Contact: jo0030@uah.edu</a> </section>
+</footer>
+</body>
+</html>
