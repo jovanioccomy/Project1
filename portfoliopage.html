@@ -20,9 +20,44 @@ body {
     margin-top: 0;
     margin-bottom: 0;
 	background: #1F1F1F;
-    background-image: url("../images/bg3.jpg")
-	
+    background: url("bg2");
 }
+	
+	
+	.text{
+		grid-area: text;
+		color: white;
+		font-size: 24px;
+		padding-left: 250px;
+		font-weight: 100px;
+		
+	}
+	
+	.image {
+		grid-area: image;
+		width: 50%;
+	}
+	
+	.caption{
+		grid-area:caption;
+		color: lightgray;
+		padding-left: 290px;
+	}
+	
+	.mainArticle{
+		margin 2% 1% 0% 1%
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-column-gap: 10px;
+		grid-row-gap: 10px;
+		gride-row-gap: 10px;
+		grid-template-areas: 
+			"image image ."
+			"caption text text"
+	}
+	
+	
+
 header, footer, article, nav, div {
     padding: 1.2em;
     font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
@@ -67,12 +102,7 @@ li a:hover {
 }
 #mainArticle {
     grid-area: article;
-    margin-top: 240px;
-    text-align: left;
-    color: #CDCDCD;
-    font-size: 58px;
-    line-height: 70px;
-    text-shadow: 2px 2px 2px #000000;
+	padding-top: 180px;
 }
 #mainNav {
     grid-area: nav;
@@ -95,13 +125,21 @@ body {
 </head>
 <body>
 <header id="pageHeader"> <img class="img" alt="logo" src="../images/ymocco3"> </header>
-<article id="mainArticle">Make Your Products Work for Users,<br>
-  not the Other way Around.</article>
+<article id="mainArticle">
+	
+<div class="grid container">
+	<div class="text"> Sketch Book</div>
+	<img class="image" alt="imgg" src="gif.gif">
+	<div class="caption"> Example</div>
+	
+</div>
+	</article>
+	
 <nav id="mainNav">
   <ul>
-    <li><a class="selected" href="index.html">About</a></li>
+    <li><a class="about" href="index.html">About</a></li>
     <li><a href="pricingpage.html">Pricing</a></li>
-    <li><a href="portfoliopage.html">Portfolio</a></li>
+    <li><a class="selected" href="portfoliopage.html">Portfolio</a></li>
     <li><a href="#">Contact</a></li>
     <li><a href="#">FAQ</a></li>
   </ul>
